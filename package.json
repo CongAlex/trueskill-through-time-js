@@ -1,0 +1,28 @@
+{
+  "name": "trueskill-through-time-js",
+  "version": "1.0.0",
+  "description": "TrueSkill Through Time in dependency-free JavaScript, ready for Google Apps Script. A port of the official Python package.",
+  "main": "src/ttt.js",
+  "files": [
+    "src",
+    "appsscript"
+  ],
+  "scripts": {
+    "build": "node scripts/build-gas.js",
+    "test": "node scripts/build-gas.js && node test/compare.js && node test/appsscript.js",
+    "fixtures": "python3 test/gen_fixtures.py > test/fixtures.json"
+  },
+  "keywords": [
+    "trueskill",
+    "trueskill-through-time",
+    "rating",
+    "skill",
+    "ranking",
+    "elo",
+    "google-apps-script"
+  ],
+  "license": "BSD-3-Clause-Clear",
+  "engines": {
+    "node": ">=12"
+  }
+}
